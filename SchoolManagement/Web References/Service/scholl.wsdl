@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="attentab_insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaSiswa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="attentab_insertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="attentab_insertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="attentab_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaSiswa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="attentab_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="attentab_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="attentab_delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="attentab_deleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="attentab_deleteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="entab_insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="studentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="section" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enrollDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="entab_insertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="entab_insertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="entab_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="studentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="section" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="enrollDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="entab_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="entab_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="entab_delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="entab_deleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="entab_deleteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sectiontab_insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sectionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="studentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="section" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sectiontab_insertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Sectiontab_insertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sectiontab_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sectionId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="studentName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="section" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sectiontab_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Sectiontab_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sectiontab_delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="sectionId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Sectiontab_deleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Sectiontab_deleteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabdaftar_insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nis" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaSiswa" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="rataRataNilai" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="tanggalPendaftaran" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabdaftar_insertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabdaftar_insertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabdaftar_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nis" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaSiswa" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="rataRataNilai" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="tanggalPendaftaran" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabdaftar_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabdaftar_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabdaftar_delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nis" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabdaftar_deleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabdaftar_deleteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabguru_insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idGuru" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaGuru" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jenisKelamin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nomorHp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabguru_insertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabguru_insertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabguru_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idGuru" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaGuru" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jenisKelamin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nomorHp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabguru_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabguru_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabguru_delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idGuru" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabguru_deleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabguru_deleteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabkehadiran_insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nis" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaSiswa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="presensi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabkehadiran_insertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabkehadiran_insertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabkehadiran_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nis" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaSiswa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="presensi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabkehadiran_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabkehadiran_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabkehadiran_delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="nis" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabkehadiran_deleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabkehadiran_deleteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabsiswa_insert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaSiswa" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tanggal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="jenisKelamin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nomorHp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabsiswa_insertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabsiswa_insertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabsiswa_update">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="namaSiswa" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tanggal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="jenisKelamin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nomorHp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabsiswa_updateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabsiswa_updateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabsiswa_delete">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="tabsiswa_deleteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabsiswa_deleteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="attentab_insertSoapIn">
+    <wsdl:part name="parameters" element="tns:attentab_insert" />
+  </wsdl:message>
+  <wsdl:message name="attentab_insertSoapOut">
+    <wsdl:part name="parameters" element="tns:attentab_insertResponse" />
+  </wsdl:message>
+  <wsdl:message name="attentab_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:attentab_update" />
+  </wsdl:message>
+  <wsdl:message name="attentab_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:attentab_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="attentab_deleteSoapIn">
+    <wsdl:part name="parameters" element="tns:attentab_delete" />
+  </wsdl:message>
+  <wsdl:message name="attentab_deleteSoapOut">
+    <wsdl:part name="parameters" element="tns:attentab_deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="entab_insertSoapIn">
+    <wsdl:part name="parameters" element="tns:entab_insert" />
+  </wsdl:message>
+  <wsdl:message name="entab_insertSoapOut">
+    <wsdl:part name="parameters" element="tns:entab_insertResponse" />
+  </wsdl:message>
+  <wsdl:message name="entab_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:entab_update" />
+  </wsdl:message>
+  <wsdl:message name="entab_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:entab_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="entab_deleteSoapIn">
+    <wsdl:part name="parameters" element="tns:entab_delete" />
+  </wsdl:message>
+  <wsdl:message name="entab_deleteSoapOut">
+    <wsdl:part name="parameters" element="tns:entab_deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sectiontab_insertSoapIn">
+    <wsdl:part name="parameters" element="tns:Sectiontab_insert" />
+  </wsdl:message>
+  <wsdl:message name="Sectiontab_insertSoapOut">
+    <wsdl:part name="parameters" element="tns:Sectiontab_insertResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sectiontab_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:Sectiontab_update" />
+  </wsdl:message>
+  <wsdl:message name="Sectiontab_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:Sectiontab_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="Sectiontab_deleteSoapIn">
+    <wsdl:part name="parameters" element="tns:Sectiontab_delete" />
+  </wsdl:message>
+  <wsdl:message name="Sectiontab_deleteSoapOut">
+    <wsdl:part name="parameters" element="tns:Sectiontab_deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabdaftar_insertSoapIn">
+    <wsdl:part name="parameters" element="tns:tabdaftar_insert" />
+  </wsdl:message>
+  <wsdl:message name="tabdaftar_insertSoapOut">
+    <wsdl:part name="parameters" element="tns:tabdaftar_insertResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabdaftar_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:tabdaftar_update" />
+  </wsdl:message>
+  <wsdl:message name="tabdaftar_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:tabdaftar_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabdaftar_deleteSoapIn">
+    <wsdl:part name="parameters" element="tns:tabdaftar_delete" />
+  </wsdl:message>
+  <wsdl:message name="tabdaftar_deleteSoapOut">
+    <wsdl:part name="parameters" element="tns:tabdaftar_deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabguru_insertSoapIn">
+    <wsdl:part name="parameters" element="tns:tabguru_insert" />
+  </wsdl:message>
+  <wsdl:message name="tabguru_insertSoapOut">
+    <wsdl:part name="parameters" element="tns:tabguru_insertResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabguru_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:tabguru_update" />
+  </wsdl:message>
+  <wsdl:message name="tabguru_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:tabguru_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabguru_deleteSoapIn">
+    <wsdl:part name="parameters" element="tns:tabguru_delete" />
+  </wsdl:message>
+  <wsdl:message name="tabguru_deleteSoapOut">
+    <wsdl:part name="parameters" element="tns:tabguru_deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabkehadiran_insertSoapIn">
+    <wsdl:part name="parameters" element="tns:tabkehadiran_insert" />
+  </wsdl:message>
+  <wsdl:message name="tabkehadiran_insertSoapOut">
+    <wsdl:part name="parameters" element="tns:tabkehadiran_insertResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabkehadiran_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:tabkehadiran_update" />
+  </wsdl:message>
+  <wsdl:message name="tabkehadiran_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:tabkehadiran_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabkehadiran_deleteSoapIn">
+    <wsdl:part name="parameters" element="tns:tabkehadiran_delete" />
+  </wsdl:message>
+  <wsdl:message name="tabkehadiran_deleteSoapOut">
+    <wsdl:part name="parameters" element="tns:tabkehadiran_deleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabsiswa_insertSoapIn">
+    <wsdl:part name="parameters" element="tns:tabsiswa_insert" />
+  </wsdl:message>
+  <wsdl:message name="tabsiswa_insertSoapOut">
+    <wsdl:part name="parameters" element="tns:tabsiswa_insertResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabsiswa_updateSoapIn">
+    <wsdl:part name="parameters" element="tns:tabsiswa_update" />
+  </wsdl:message>
+  <wsdl:message name="tabsiswa_updateSoapOut">
+    <wsdl:part name="parameters" element="tns:tabsiswa_updateResponse" />
+  </wsdl:message>
+  <wsdl:message name="tabsiswa_deleteSoapIn">
+    <wsdl:part name="parameters" element="tns:tabsiswa_delete" />
+  </wsdl:message>
+  <wsdl:message name="tabsiswa_deleteSoapOut">
+    <wsdl:part name="parameters" element="tns:tabsiswa_deleteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="schollSoap">
+    <wsdl:operation name="attentab_insert">
+      <wsdl:input message="tns:attentab_insertSoapIn" />
+      <wsdl:output message="tns:attentab_insertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="attentab_update">
+      <wsdl:input message="tns:attentab_updateSoapIn" />
+      <wsdl:output message="tns:attentab_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="attentab_delete">
+      <wsdl:input message="tns:attentab_deleteSoapIn" />
+      <wsdl:output message="tns:attentab_deleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="entab_insert">
+      <wsdl:input message="tns:entab_insertSoapIn" />
+      <wsdl:output message="tns:entab_insertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="entab_update">
+      <wsdl:input message="tns:entab_updateSoapIn" />
+      <wsdl:output message="tns:entab_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="entab_delete">
+      <wsdl:input message="tns:entab_deleteSoapIn" />
+      <wsdl:output message="tns:entab_deleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sectiontab_insert">
+      <wsdl:input message="tns:Sectiontab_insertSoapIn" />
+      <wsdl:output message="tns:Sectiontab_insertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sectiontab_update">
+      <wsdl:input message="tns:Sectiontab_updateSoapIn" />
+      <wsdl:output message="tns:Sectiontab_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Sectiontab_delete">
+      <wsdl:input message="tns:Sectiontab_deleteSoapIn" />
+      <wsdl:output message="tns:Sectiontab_deleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabdaftar_insert">
+      <wsdl:input message="tns:tabdaftar_insertSoapIn" />
+      <wsdl:output message="tns:tabdaftar_insertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabdaftar_update">
+      <wsdl:input message="tns:tabdaftar_updateSoapIn" />
+      <wsdl:output message="tns:tabdaftar_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabdaftar_delete">
+      <wsdl:input message="tns:tabdaftar_deleteSoapIn" />
+      <wsdl:output message="tns:tabdaftar_deleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabguru_insert">
+      <wsdl:input message="tns:tabguru_insertSoapIn" />
+      <wsdl:output message="tns:tabguru_insertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabguru_update">
+      <wsdl:input message="tns:tabguru_updateSoapIn" />
+      <wsdl:output message="tns:tabguru_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabguru_delete">
+      <wsdl:input message="tns:tabguru_deleteSoapIn" />
+      <wsdl:output message="tns:tabguru_deleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabkehadiran_insert">
+      <wsdl:input message="tns:tabkehadiran_insertSoapIn" />
+      <wsdl:output message="tns:tabkehadiran_insertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabkehadiran_update">
+      <wsdl:input message="tns:tabkehadiran_updateSoapIn" />
+      <wsdl:output message="tns:tabkehadiran_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabkehadiran_delete">
+      <wsdl:input message="tns:tabkehadiran_deleteSoapIn" />
+      <wsdl:output message="tns:tabkehadiran_deleteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabsiswa_insert">
+      <wsdl:input message="tns:tabsiswa_insertSoapIn" />
+      <wsdl:output message="tns:tabsiswa_insertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabsiswa_update">
+      <wsdl:input message="tns:tabsiswa_updateSoapIn" />
+      <wsdl:output message="tns:tabsiswa_updateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="tabsiswa_delete">
+      <wsdl:input message="tns:tabsiswa_deleteSoapIn" />
+      <wsdl:output message="tns:tabsiswa_deleteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="schollSoap" type="tns:schollSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="attentab_insert">
+      <soap:operation soapAction="http://tempuri.org/attentab_insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="attentab_update">
+      <soap:operation soapAction="http://tempuri.org/attentab_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="attentab_delete">
+      <soap:operation soapAction="http://tempuri.org/attentab_delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entab_insert">
+      <soap:operation soapAction="http://tempuri.org/entab_insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entab_update">
+      <soap:operation soapAction="http://tempuri.org/entab_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entab_delete">
+      <soap:operation soapAction="http://tempuri.org/entab_delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sectiontab_insert">
+      <soap:operation soapAction="http://tempuri.org/Sectiontab_insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sectiontab_update">
+      <soap:operation soapAction="http://tempuri.org/Sectiontab_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sectiontab_delete">
+      <soap:operation soapAction="http://tempuri.org/Sectiontab_delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabdaftar_insert">
+      <soap:operation soapAction="http://tempuri.org/tabdaftar_insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabdaftar_update">
+      <soap:operation soapAction="http://tempuri.org/tabdaftar_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabdaftar_delete">
+      <soap:operation soapAction="http://tempuri.org/tabdaftar_delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabguru_insert">
+      <soap:operation soapAction="http://tempuri.org/tabguru_insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabguru_update">
+      <soap:operation soapAction="http://tempuri.org/tabguru_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabguru_delete">
+      <soap:operation soapAction="http://tempuri.org/tabguru_delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabkehadiran_insert">
+      <soap:operation soapAction="http://tempuri.org/tabkehadiran_insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabkehadiran_update">
+      <soap:operation soapAction="http://tempuri.org/tabkehadiran_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabkehadiran_delete">
+      <soap:operation soapAction="http://tempuri.org/tabkehadiran_delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabsiswa_insert">
+      <soap:operation soapAction="http://tempuri.org/tabsiswa_insert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabsiswa_update">
+      <soap:operation soapAction="http://tempuri.org/tabsiswa_update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabsiswa_delete">
+      <soap:operation soapAction="http://tempuri.org/tabsiswa_delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="schollSoap12" type="tns:schollSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="attentab_insert">
+      <soap12:operation soapAction="http://tempuri.org/attentab_insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="attentab_update">
+      <soap12:operation soapAction="http://tempuri.org/attentab_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="attentab_delete">
+      <soap12:operation soapAction="http://tempuri.org/attentab_delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entab_insert">
+      <soap12:operation soapAction="http://tempuri.org/entab_insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entab_update">
+      <soap12:operation soapAction="http://tempuri.org/entab_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entab_delete">
+      <soap12:operation soapAction="http://tempuri.org/entab_delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sectiontab_insert">
+      <soap12:operation soapAction="http://tempuri.org/Sectiontab_insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sectiontab_update">
+      <soap12:operation soapAction="http://tempuri.org/Sectiontab_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Sectiontab_delete">
+      <soap12:operation soapAction="http://tempuri.org/Sectiontab_delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabdaftar_insert">
+      <soap12:operation soapAction="http://tempuri.org/tabdaftar_insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabdaftar_update">
+      <soap12:operation soapAction="http://tempuri.org/tabdaftar_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabdaftar_delete">
+      <soap12:operation soapAction="http://tempuri.org/tabdaftar_delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabguru_insert">
+      <soap12:operation soapAction="http://tempuri.org/tabguru_insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabguru_update">
+      <soap12:operation soapAction="http://tempuri.org/tabguru_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabguru_delete">
+      <soap12:operation soapAction="http://tempuri.org/tabguru_delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabkehadiran_insert">
+      <soap12:operation soapAction="http://tempuri.org/tabkehadiran_insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabkehadiran_update">
+      <soap12:operation soapAction="http://tempuri.org/tabkehadiran_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabkehadiran_delete">
+      <soap12:operation soapAction="http://tempuri.org/tabkehadiran_delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabsiswa_insert">
+      <soap12:operation soapAction="http://tempuri.org/tabsiswa_insert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabsiswa_update">
+      <soap12:operation soapAction="http://tempuri.org/tabsiswa_update" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tabsiswa_delete">
+      <soap12:operation soapAction="http://tempuri.org/tabsiswa_delete" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="scholl">
+    <wsdl:port name="schollSoap" binding="tns:schollSoap">
+      <soap:address location="https://localhost:44307/scholl.asmx" />
+    </wsdl:port>
+    <wsdl:port name="schollSoap12" binding="tns:schollSoap12">
+      <soap12:address location="https://localhost:44307/scholl.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

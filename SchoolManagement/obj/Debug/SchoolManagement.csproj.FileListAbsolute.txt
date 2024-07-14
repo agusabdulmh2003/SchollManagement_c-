@@ -1,0 +1,36 @@
+D:\siswa\SchoolManagement\SchoolManagement\bin\Debug\SchoolManagement.exe.config
+D:\siswa\SchoolManagement\SchoolManagement\bin\Debug\SchoolManagement.exe
+D:\siswa\SchoolManagement\SchoolManagement\bin\Debug\SchoolManagement.pdb
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csproj.AssemblyReference.cache
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Form1.resources
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Properties.Resources.resources
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csproj.GenerateResource.cache
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csproj.CoreCompileInputs.cache
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.exe
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.pdb
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Main.resources
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Subject.resources
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Teacher.resources
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Section.resources
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Enrollment.resources
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Attendance.resources
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Dasbor.resources
+D:\siswa\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.SignUp.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\bin\Debug\SchoolManagement.exe.config
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\bin\Debug\SchoolManagement.exe
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\bin\Debug\SchoolManagement.pdb
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csproj.AssemblyReference.cache
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Attendance.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Dasbor.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Enrollment.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Form1.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Main.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Properties.Resources.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Section.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.SignUp.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Subject.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.Teacher.resources
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csproj.GenerateResource.cache
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.csproj.CoreCompileInputs.cache
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.exe
+D:\Projek akhir Sister\SchoolManagement\SchoolManagement\obj\Debug\SchoolManagement.pdb
